@@ -37,7 +37,7 @@ class QuickNotifyPlugin : public flutter::Plugin {
       const flutter::MethodCall<flutter::EncodableValue> &method_call,
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
   
-  ToastNotifier toastNotifier_{ ToastNotificationManager::CreateToastNotifier(L"quick_notify") };
+  ToastNotifier toastNotifier_{ ToastNotificationManager::CreateToastNotifier(L"RecBot") };
 };
 
 // static
