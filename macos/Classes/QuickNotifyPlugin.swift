@@ -3,7 +3,7 @@ import FlutterMacOS
 
 public class QuickNotifyPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "RecBot", binaryMessenger: registrar.messenger)
+    let channel = FlutterMethodChannel(name: "quick_notify", binaryMessenger: registrar.messenger)
     let instance = QuickNotifyPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
